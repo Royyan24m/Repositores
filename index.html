@@ -1,1 +1,165 @@
-<!DOCTYPE html><html><head><title>My Website</title></head><body><h1>Hello, World!</h1></body></html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biodata Royyan Rahmat R. Masloman</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(to right, #6e4d32, #ffffff); /* gradasi warna coffee dan putih */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .biodata-container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff; /* latar belakang putih */
+    border: 1px solid #9e7f6b; /* border warna moka */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    animation: slideIn 0.5s ease-in-out forwards, scaleIn 0.5s ease-in-out forwards;
+    padding: 20px;
+  }
+
+  @keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  @keyframes scaleIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  .biodata-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 12px;
+    transition: background-color 0.3s ease;
+  }
+
+  th {
+    background-color: #9e7f6b; /* header warna moka */
+    color: white;
+    font-weight: 600;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #ddd; /* efek hover */
+  }
+
+  /* Responsivitas untuk perangkat dengan lebar kurang dari 768px */
+  @media (max-width: 768px) {
+    .biodata-container {
+      width: 95%;
+      padding: 10px;
+    }
+
+    .biodata-header h1 {
+      font-size: 24px;
+    }
+
+    .biodata-header p {
+      font-size: 14px;
+    }
+
+    table {
+      font-size: 14px;
+    }
+  }
+
+  /* Responsivitas untuk perangkat dengan lebar kurang dari 480px */
+  @media (max-width: 480px) {
+    .biodata-container {
+      width: 100%;
+      border-radius: 0;
+    }
+
+    .biodata-header h1 {
+      font-size: 20px;
+    }
+
+    .biodata-header p {
+      font-size: 12px;
+    }
+
+    table {
+      font-size: 12px;
+    }
+
+    th, td {
+      padding: 8px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="biodata-container">
+  <div class="biodata-header">
+    <h1>Biodata Diri</h1>
+    <p>Selamat datang di halaman biodata Royyan Rahmat R. Masloman. Berikut adalah informasi singkat tentang saya.</p>
+  </div>
+  <table>
+    <tr>
+      <th>Nama</th>
+      <td>Royyan Rahmat R. Masloman</td>
+    </tr>
+    <tr>
+      <th>Umur</th>
+      <td>16 tahun</td>
+    </tr>
+    <tr>
+      <th>Kelas</th>
+      <td>11 rpl</td>
+    </tr>
+    <tr>
+      <th>Tempat Tinggal</th>
+      <td>Poyowa Kecil</td>
+    </tr>
+    <tr>
+      <th>Pendidikan</th>
+      <td>SMK NEGERI 1 KOTAMOBAGU</td>
+    </tr>
+    <tr>
+      <th>No Telp</th>
+      <td>081241974682</td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td>royyanofficial86@gmail.com</td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>
